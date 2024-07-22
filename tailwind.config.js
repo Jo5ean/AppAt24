@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-import tailwindAnimate from "tailwindcss-animate"
+import tailwindAnimate from "tailwindcss-animate";
+import flowbite from 'flowbite/plugin';
+
 export default {
   darkMode: ["class"],
   content: [
@@ -7,6 +9,7 @@ export default {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'  // Añadir esta línea
   ],
   prefix: "",
   theme: {
@@ -74,5 +77,5 @@ export default {
       },
     },
   },
-  plugins: [tailwindAnimate],
-}
+  plugins: [tailwindAnimate, flowbite],  // Añadir Flowbite como plugin
+};

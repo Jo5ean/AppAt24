@@ -8,12 +8,12 @@ import Profile from '@/pages/Profile';
 export const ITEMS_MENU: menuTypes[] = [{
     label: "Inicio",
     to: "/",
-    component: Maps
+    component: Profile
 },
 {
     label: "Mi perfil",
     to: "/profile",
-    component: Profile
+    component: Maps
 },
 {
     label: "Mis pagos",
