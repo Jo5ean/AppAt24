@@ -102,20 +102,26 @@ const Profile: React.FC = () => {
                                     <p className="date_8264">1 2 / 2 4</p>
                                     <p className="name">LUIS CRUZ</p>
                                 </div>
-                                <div className="flip-card-back">
+                                <div className="flip-card-back relative">
                                     <div className="strip"></div>
-                                    <div className='grid grid-cols-1'>
-                                        <p className='text-start text-white text-sm mt-5 mb-2 mx-3'>Nro de Socio:</p>
-                                        <div className="mstrip"><span className='text-sm text-black font-bold'>606442</span></div>
-                                    </div>
-                                    <div className='relative grid grid-cols-1 mt-4'>
-                                        <p className='absolute top-0 left-0 text-start text-white text-sm mt-0 mb-2 mx-3'>Patente:</p>
-                                        <div className="sstrip mt-5">
-                                            <p className="code"><span className='text-sm'>ZZ23ZZ</span></p>
+                                    <div className="flex flex-col justify-end h-full mt-[5em]"> 
+                                        <div className="shadow-lg rounded-lg pb-6 max-w-sm w-full">
+                                            <div className="grid grid-cols-2 gap-4 mx-1">
+                                                <span className="font-semibold">Nro de Socio:</span>
+                                                <span className="font-semibold">Patente:</span>
+                                            </div>
+                                            <div className="grid grid-cols-2 gap-4 mx-2">
+                                                <div className="rounded-md bg-white text-center">
+                                                    <span className="text-black">606442</span>
+                                                </div>
+                                                <div className="rounded-md bg-white text-center">
+                                                    <span className="text-black">ZZ23ZZ</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
+
 
                             </div>
                         </div>
